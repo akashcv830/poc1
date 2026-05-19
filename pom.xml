@@ -8,6 +8,7 @@
     <groupId>com.example</groupId>
     <artifactId>demo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -25,19 +26,17 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
     </dependencies>
-<build>
-    <plugins>
-        <plugin>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-maven-plugin</artifactId>
 
-            <!-- ADD THIS BLOCK -->
-            <configuration>
-                <mainClass>com.example.demo.DemoApplication</mainClass>
-            </configuration>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <mainClass>com.example.demo.DemoApplication</mainClass>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
-        </plugin>
-    </plugins>
-</build>
-
-    
+</project>
